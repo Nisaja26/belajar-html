@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+
+     <h1>Atribut HTML</h1>
+       <p><li>Semua elemen HTML dapat memiliki atribut</li>
+       <li>Atribut memberikan informasi tambahan tentang elemen</li>
+       <li>Atribut selalu ditentukan dalam tag awal</li>
+       <li>Atribut biasanya datang dalam pasangan nama/nilai seperti: name="value"</li> 
+       </p>
+
+     <h2>Atribut href</h2>
+       <p>Tag 'a' mendefinisikan hyperlink. Atribut href menentukan URL halaman yang dituju link tersebut</p>
+       <!-- contoh -->
+       <a href="https://www.instagram.com/Nisaja26/">Akun Instagram Nissa</a>
+       
+      <h2>Atribut src</h2> 
+      <p>Tag 'img' digunakan untuk menyematkan gambar di halaman HTML. Atribut src menentukan jalur ke gambar yang akan ditampilkan</p>
+       <!-- contoh -->
+       <img src="d:\foto-video\foto-nissa.png">
+       
+      <h3>2 cara untuk menentukan URL di atribut src</h3> 
+        <p><b>1. URL Absolut</b> - Tautan ke gambar eksternal yang dihosting di situs web lain. Contoh: src="https://www.w3schools.com/images/img_girl.jpg".<br>
+         <b>Catatan:</b> Gambar eksternal mungkin dilindungi hak cipta. Jika Anda tidak mendapatkan izin untuk menggunakannya, Anda mungkin melanggar undang-undang hak cipta. Selain itu, Anda tidak dapat mengontrol gambar eksternal; itu bisa tiba-tiba dihapus atau diubah.<br>
+         <b>2. URL Relatif</b> - Tautan ke gambar yang dihosting di dalam situs web. Di sini, URL tidak menyertakan nama domain. Jika URL diawali tanpa garis miring, URL tersebut akan relatif terhadap halaman saat ini. Contoh: src="img_girl.jpg". Jika URL dimulai dengan garis miring, itu akan berhubungan dengan domain. Contoh: src="/images/img_girl.jpg".</br>
+         <b>Tip:</b> Hampir selalu yang terbaik adalah menggunakan URL relatif. Mereka tidak akan rusak jika Anda mengubah domain.<br>
+        </p>
+       
+      <h2>Atribut lebar dan tinggi</h2>
+        <p>Tag <img> juga harus berisi atribut lebar dan tinggi, yang menentukan lebar dan tinggi gambar (dalam piksel)</p>   
+      <!-- contoh -->
+      <img src="d:\foto-video\foto-nissa.png" width="200" height="300"> 
+    
+      <h2>Atribut alt</h2>
+        <p>Atribut alt yang diperlukan untuk tag 'img' menentukan teks alternatif untuk gambar, jika gambar karena alasan tertentu tidak dapat ditampilkan. Hal ini dapat disebabkan oleh koneksi yang lambat, atau kesalahan pada atribut src, atau jika pengguna menggunakan pembaca layar.</p>
+      <!-- contoh -->
+      <img src="d:\foto-video\foto-nissa.png" alt="foto Nissa">
+
+      <h2>Atribut gaya (style)</h2>
+        <p>Atribut style digunakan untuk menambahkan gaya pada suatu elemen, seperti warna, font, ukuran, dan lainnya.</p>
+      <!-- contoh -->
+      <p style="color:red;">paragraf berwarna merah.</p>
+
+      <h2>Atribut lang</h2>
+        <p>Anda harus selalu menyertakan atribut lang di dalam tag 'html', untuk mendeklarasikan bahasa halaman Web. Ini dimaksudkan untuk membantu mesin pencari dan browser.</p>
+      <!-- contoh -->
+      <html lang="en"> 'html lang=en'
+       <p>Kode negara juga dapat ditambahkan ke kode bahasa di atribut lang. Jadi, dua karakter pertama menentukan bahasa halaman HTML, dan dua karakter terakhir menentukan negara.</p>
+       <p>Contoh berikut menetapkan bahasa Inggris sebagai bahasanya dan Amerika Serikat sebagai negaranya</p>
+      <!-- contoh -->
+      <html lang="en-US"> 'html lang="en-US"'
+      
+      <h2>Judul Atribut</h2>
+        <p>Atribut title mendefinisikan beberapa informasi tambahan tentang suatu elemen.</br>
+         Nilai atribut title akan ditampilkan sebagai tooltip ketika Anda mengarahkan mouse ke elemen
+        </p>
+      <!-- contoh -->  
+      <p title="aku nissa">ini adalah paragraf.</p>
+      
+      <h2>Saran Kami: Selalu Mengutip Nilai Atribut</h2>
+        <p>Standar HTML tidak memerlukan tanda kutip di sekitar nilai atribut.<br>
+        Namun, W3C merekomendasikan kutipan dalam HTML, dan meminta kutipan untuk jenis dokumen yang lebih ketat seperti XHTML.</p>
+      <!-- contoh benar -->
+      <a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+      <!-- contoh salah -->
+      <a href=https://www.w3schools.com/html/>Visit our HTML tutorial</a><br>
+      <p>Terkadang Anda harus menggunakan tanda kutip. Contoh ini tidak akan menampilkan atribut title dengan benar, karena mengandung spasi:</p>
+      <!-- contoh -->
+      <p title=tentang nissa>
+
+      <h2>Kutipan Tunggal atau Ganda?</h2>  
+        <p>Tanda kutip ganda di sekitar nilai atribut adalah yang paling umum dalam HTML, namun tanda kutip tunggal juga dapat digunakan.<br>
+            Dalam beberapa situasi, ketika nilai atribut itu sendiri berisi tanda kutip ganda, maka perlu menggunakan tanda kutip tunggal:
+        </p>
+      <!-- contoh -->
+      <p title='nissa "baik" cantik'></p> 
+      <!-- Atau sebaliknya: -->
+      <p title="nissa 'baik' cantik"></p> 
+
+      <h4>Ringkasan Bab</h4>
+      <li>Semua elemen HTML dapat memiliki atribut</li>
+      <li>Atribut href dari 'a' menentukan URL halaman yang dituju link tersebut</li>
+      <li>Atribut src dari <img> menentukan jalur ke gambar yang akan ditampilkan</li>
+      <li>Atribut lebar dan tinggi <img> memberikan informasi ukuran gambar</li>
+      <li>Atribut alt <img> menyediakan teks alternatif untuk gambar</li>
+      <li>Atribut style digunakan untuk menambahkan gaya ke suatu elemen, seperti warna, font, ukuran, dan lainnya</li>
+      <li>Atribut lang dari tag <html> mendeklarasikan bahasa halaman Web</li>
+      <li>Atribut title mendefinisikan beberapa informasi tambahan tentang suatu elemen</li>
+
+
+    </body>
+
+</html>
