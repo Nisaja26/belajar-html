@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Link HTML Nissa</title></head>
+    <header><h1>HTML Link</h1>
+      <p>Tautan ditemukan di hampir semua halaman web. Tautan memungkinkan pengguna mengeklik dari halaman ke halaman.</p>
+    </header>
+    <body>
+       <h2>Tautan HTML - Hyperlink
+        Tautan HTML adalah hyperlink.</h2>
+        <p>Anda dapat mengeklik tautan dan melompat ke dokumen lain.<br>
+            Saat Anda menggerakkan mouse ke atas link, panah mouse akan berubah menjadi tangan kecil.<br>
+            <strong>Tautan tidak harus berupa teks. Tautan dapat berupa gambar atau elemen HTML lainnya!</strong> 
+        </p>
+
+        <h2>Tautan HTML - Sintaks</h2>
+        <p>Tag HTML 'a' mendefinisikan hyperlink. Ini memiliki sintaks berikut</p>
+        <!--contoh-->
+        <a href="url">link text</a>
+        <p>Atribut terpenting dari elemen 'a' adalah atribut href, yang menunjukkan tujuan tautan.<br>
+            Teks tautan adalah bagian yang akan terlihat oleh pembaca.<br>
+            Mengklik teks tautan, akan mengirim pembaca ke alamat URL yang ditentukan.
+        </p>
+        <!--contoh-->
+        <a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+        <p>Secara default, tautan akan muncul sebagai berikut di semua browser</p>
+        <li>Tautan yang belum dikunjungi digarisbawahi dan berwarna biru</li>
+        <li>Tautan yang dikunjungi digarisbawahi dan berwarna ungu</li>
+        <li>Tautan aktif digarisbawahi dan berwarna merah</li>
+        <strong>Tip: Tautan tentu saja dapat ditata dengan CSS, untuk mendapatkan tampilan lain!</strong>
+
+
+        <h2>Tautan HTML - Atribut target</h2>
+        <p>Secara default, halaman tertaut akan ditampilkan di jendela browser saat ini. Untuk mengubahnya, Anda harus menentukan target lain untuk tautan tersebut.<br>
+            Atribut target menentukan tempat membuka dokumen tertaut.
+            Atribut target dapat memiliki salah satu nilai berikut:
+        </p>
+        <li>_self - Default. Membuka dokumen di jendela/tab yang sama dengan yang diklik</li>
+        <li>_blank - Opens Membuka dokumen di jendela atau tab baru</li>
+        <li>_parent - Membuka dokumen di bingkai induk</li>
+        <li>_top - Membuka dokumen di seluruh isi jendela</li>
+        <!--contoh-->
+        <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+
+        <h2>URL Absolut vs. URL Relatif</h2>
+        <p>Kedua contoh di atas menggunakan URL absolut (alamat web lengkap) pada atribut href.<br>
+            Tautan lokal (tautan ke halaman dalam situs web yang sama) ditentukan dengan URL relatif (tanpa bagian "https://www")
+        </p>
+        <!--contoh-->
+        <h2>Absolute URLs</h2>
+        <p><a href="https://www.w3.org/">W3C</a></p>
+        <p><a href="https://www.google.com/">Google</a></p>
+
+        <h2>Relative URLs</h2>
+        <p><a href="html_images.asp">HTML Images</a></p>
+        <p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+        <h2>Tautan HTML - Gunakan Gambar sebagai Tautan</h2>
+        <p>Untuk menggunakan gambar sebagai link, cukup masukkan tag 'img' di dalam tag 'a'</p>
+        <!--contoh-->
+        <a href="default.asp">
+            <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+        </a>
+
+        <h2>Tautan ke Alamat Email</h2>
+        <p>Gunakan mailto: di dalam atribut href untuk membuat tautan yang membuka program email pengguna (agar mereka dapat mengirim email baru)</p>
+        <!--contoh-->
+        <a href="mailto:someone@example.com">Send email</a>
+
+        <h2>Button as a Link</h2>
+        <p>Untuk menggunakan tombol HTML sebagai tautan, Anda harus menambahkan beberapa kode JavaScript.<br>
+            JavaScript memungkinkan Anda menentukan apa yang terjadi pada peristiwa tertentu, seperti mengklik tombol
+        </p>
+        <!--contoh-->
+        <button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+        <h2>Link Titles</h2>
+        <p>Atribut title menentukan informasi tambahan tentang suatu elemen. Informasi ini paling sering ditampilkan sebagai teks keterangan alat saat mouse bergerak di atas elemen.</p>
+        <!--contoh-->
+        <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+        <h2>Lebih lanjut tentang URL Absolut dan URL Relatif</h2>
+        <!--contoh-->
+        <p>Gunakan URL lengkap untuk menautkan ke halaman web:</p>
+        <a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a>
+        <!--contoh-->
+        <p>Tautan ke halaman yang terletak di folder html di situs web saat ini:</p>
+        <!--contoh-->
+        <a href="/html/default.asp">HTML tutorial</a>
+        <!--contoh-->
+        <p>Tautan ke halaman yang terletak di folder yang sama dengan halaman saat ini:</p>
+        <a href="default.asp">HTML tutorial</a>
+
+        <h4>Ringkasan Bab</h4>
+        <li>Gunakan elemen 'a' untuk mendefinisikan tautan</li>
+        <li>Gunakan atribut href untuk menentukan alamat tautan</li>
+        <li>Gunakan atribut target untuk menentukan tempat membuka dokumen tertaut</li>
+        <li>Gunakan elemen 'img' (di dalam 'a') untuk menggunakan gambar sebagai tautan</li>
+        <li>Gunakan skema mailto: di dalam atribut href untuk membuat tautan yang membuka program email pengguna</li>
+
+
+        <br><br><br><br>
+        <h1>Tautan HTML - Warna Berbeda</h1>
+        <p>Tautan HTML ditampilkan dalam warna berbeda tergantung apakah sudah dikunjungi, belum dikunjungi, atau aktif.</p>
+
+        <h2>HTML Link Colors</h2>
+        <p>Secara default, tautan akan muncul seperti ini (di semua browser):</p>
+        <li>Tautan yang belum dikunjungi digarisbawahi dan berwarna biru</li> 
+        <li>Tautan yang dikunjungi digarisbawahi dan berwarna ungu</li>
+        <li>Tautan aktif digarisbawahi dan berwarna merah</li>
+        <!--contoh-->
+        <p>Di sini, tautan yang belum dikunjungi akan berwarna hijau tanpa garis bawah. Tautan yang dikunjungi akan berwarna merah muda tanpa garis bawah. Tautan aktif akan berwarna kuning dan digarisbawahi. Selain itu, saat mengarahkan kursor ke tautan (a:hover), tautan tersebut akan berubah menjadi merah dan bergaris bawah:</p>
+        <style>
+            a:link {
+              color: green;
+              background-color: transparent;
+              text-decoration: none;
+            }
+            
+            a:visited {
+              color: pink;
+              background-color: transparent;
+              text-decoration: none;
+            }
+            
+            a:hover {
+              color: red;
+              background-color: transparent;
+              text-decoration: underline;
+            }
+            
+            a:active {
+              color: yellow;
+              background-color: transparent;
+              text-decoration: underline;
+            }
+            </style>
+
+            <h2>Link Button</h2>
+            <p>Tautan juga dapat ditata sebagai tombol, dengan menggunakan CSS:</p>
+            <!--contoh-->
+            <style>
+                a:link, a:visited {
+                  background-color: #f44336;
+                  color: white;
+                  padding: 15px 25px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                }
+                
+                a:hover, a:active {
+                  background-color: red;
+                }
+            </style>
+
+            <h1>HTML Links - Create Bookmarks</h1>
+            <p>Tautan HTML dapat digunakan untuk membuat bookmark, sehingga pembaca dapat melompat ke bagian tertentu pada halaman web.</p>
+            
+            <h2>Create a Bookmark in HTML</h2>
+            <p>Bookmark dapat berguna jika halaman web sangat panjang.<br>
+                Untuk membuat bookmark - pertama buat bookmark, lalu tambahkan link ke dalamnya.<br>
+                Ketika tautan diklik, halaman akan bergulir ke bawah atau ke atas ke lokasi yang diberi bookmark.
+            </p>
+            <!--contoh-->
+            <p>Pertama, gunakan atribut id untuk membuat bookmark:</p>
+            <h2 id="C4">Chapter 4</h2>
+            <!--contoh-->
+            <p>Kemudian, tambahkan link ke bookmark ("Lompat ke Bab 4"), dari dalam halaman yang sama:</p>
+            <a href="#C4">Jump to Chapter 4</a>
+            <!--contoh-->
+            <p>Anda juga dapat menambahkan link ke bookmark di halaman lain:</p>
+            <a href="html_demo.html#C4">Jump to Chapter 4</a>
+
+            <h3>Ringkasan Bab</h3>
+            <li>Gunakan atribut id (id="value") untuk menentukan bookmark di halaman</li>
+            <li>Gunakan atribut href (href="#value") untuk menautkan ke bookmark</li>
+    </body>
+</html>            
