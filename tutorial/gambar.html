@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <head><title>Images HTML Nissa</title></head>
+        <header>Gambar Html</header>
+        <p>Gambar dapat meningkatkan desain dan tampilan halaman web.</p>
+        <!--contoh-->
+        <img src="pic_trulli.jpg" alt="Italian Trulli">
+        <!--contoh-->
+        <img src="img_girl.jpg" alt="Girl in a jacket">
+        <!--contoh-->
+        <img src="img_chania.jpg" alt="Flowers in Chania">
+
+        <h2>HTML Images Syntax</h2>
+        <p>Tag HTML <img> digunakan untuk menyematkan gambar di halaman web.<br>
+            Gambar secara teknis tidak dimasukkan ke dalam halaman web; gambar ditautkan ke halaman web. Tag 'img' membuat ruang tunggu untuk gambar yang direferensikan.<br>
+            Tag 'img' kosong, hanya berisi atribut, dan tidak memiliki tag penutup.  
+            Tag 'img' memiliki dua atribut yang diperlukan:
+        </p>
+        <li>src - Menentukan jalur ke gambar</li>
+        <li>alt - Menentukan teks alternatif untuk gambar</li>
+        <!--syntax-->
+        <img src="url" alt="alternatetext">
+
+        <h2>Atribut src</h2>
+        <p>Atribut src yang diperlukan menentukan jalur (URL) ke gambar.<br>
+            <strong>catatan</strong>Saat halaman web dimuat, browserlah yang pada saat itu mengambil gambar dari server web dan memasukkannya ke dalam halaman. Oleh karena itu, pastikan gambar tersebut benar-benar tetap berada di tempat yang sama dengan halaman web, jika tidak pengunjung Anda akan mendapatkan ikon tautan rusak. Ikon tautan rusak dan teks alt ditampilkan jika browser tidak dapat menemukan gambar. 
+        </p>
+        <!--contoh-->
+        <img src="img_chania.jpg" alt="Flowers in Chania">
+
+        <h2>The alt Attribute</h2>
+        <p>Atribut alt yang diperlukan menyediakan teks alternatif untuk gambar, jika pengguna karena alasan tertentu tidak dapat melihatnya (karena koneksi lambat, kesalahan pada atribut src, atau jika pengguna menggunakan pembaca layar).<br>
+            Nilai atribut alt harus mendeskripsikan gambar
+        </p>
+        <!--contoh-->
+        <img src="img_chania.jpg" alt="Flowers in Chania">
+        <p>Jika browser tidak dapat menemukan gambar, maka akan menampilkan nilai atribut alt:</p>
+        <!--contoh-->
+        <img src="wrongname.gif" alt="Flowers in Chania">
+
+        <h2>Image Size - Width and Height</h2>
+        <p>Anda dapat menggunakan atribut style untuk menentukan lebar dan tinggi gambar.</p>
+        <!--contoh-->
+        <img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+
+        <p>Alternatifnya, Anda dapat menggunakan atribut Width dan height</p>
+        <!--contoh-->
+        <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+        <p>Atribut lebar dan tinggi selalu menentukan lebar dan tinggi gambar dalam piksel.</p>
+
+        <h2>Width and Height, or Style?</h2>
+        <p>Atribut lebar, tinggi, dan gaya semuanya valid dalam HTML.<br>
+            Namun, kami menyarankan untuk menggunakan atribut style. Ini mencegah style sheet mengubah ukuran gambar
+        </p>
+        <!--contoh-->
+        <style>
+            img {
+              width: 100%;
+            }
+        </style>
+        <img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
+        <img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+        <h2>Gambar di Folder Lain</h2>
+        <p>Jika Anda memiliki gambar di sub-folder, Anda harus menyertakan nama folder di atribut src</p>
+        <!--contoh-->
+        <img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+        <h2>Images on Another Server/Website</h2>
+        <p>Beberapa situs web menunjuk ke gambar di server lain.<br>
+            Untuk menunjuk ke gambar di server lain, Anda harus menentukan URL absolut (lengkap) di atribut src
+        </p>
+        <!--contoh-->
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+        <p><strong>Catatan tentang gambar eksternal:</strong> Gambar eksternal mungkin dilindungi hak cipta. Jika Anda tidak mendapatkan izin untuk menggunakannya, Anda mungkin melanggar undang-undang hak cipta. Selain itu, Anda tidak dapat mengontrol gambar eksternal; mereka dapat tiba-tiba dihapus atau diubah.</p>
+
+        <h2>Animated Images</h2>
+        <p>HTML memungkinkan GIF animasi:</p>
+        <!--contoh-->
+        <img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+
+        <h2>Image as a Link</h2>
+        <p>Untuk menggunakan gambar sebagai link, letakkan tag 'img' di dalam tag 'a':</p>
+        <!--contoh-->
+        <a href="default.asp">
+            <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+        </a>
+
+        <h2>Image Floating</h2>
+        <p>Gunakan properti float CSS untuk membiarkan gambar melayang ke kanan atau ke kiri teks:</p>
+        <!--contoh-->
+        <p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+            The image will float to the right of the text.</p>
+            <p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+            The image will float to the left of the text.
+        </p>
+
+        <h2>Common Image Formats</h2>
+        <p>Berikut adalah jenis file gambar yang paling umum, yang didukung di semua browser (Chrome, Edge, Firefox, Safari, Opera):</p>
+        
+        <h3>Ringkasan Bab</h3>
+        <li>Gunakan elemen HTML 'img' untuk mendefinisikan gambar</li>
+        <li>Gunakan atribut HTML src untuk menentukan URL gambar</li>
+        <li>Gunakan atribut alt HTML untuk menentukan teks alternatif untuk gambar, jika tidak dapat ditampilkan</li>
+        <li>Gunakan atribut lebar dan tinggi HTML atau properti lebar dan tinggi CSS untuk menentukan ukuran gambar</li>
+        <li>Gunakan properti CSS float untuk membiarkan gambar melayang ke kiri atau ke kanan</li>
+
+        <h1>HTML Image Maps</h1>       
+        <p>Dengan peta gambar HTML, Anda dapat membuat area yang dapat diklik pada gambar.<br>
+         Tag HTML 'map' mendefinisikan peta gambar. Peta gambar adalah gambar dengan area yang dapat diklik. Area ditentukan dengan satu atau lebih tag 'area'.
+         Coba klik pada komputer, ponsel, atau secangkir kopi pada gambar di bawah ini:
+        </p>
+        <!--contoh-->
+        <p>Berikut adalah source code HTML untuk gambar peta di atas:</p>
+        <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+            <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+            <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+        </map>
+
+        <h2>Bagaimana cara kerjanya?</h2>
+        <p>Ide dibalik peta gambar adalah Anda dapat melakukan tindakan yang berbeda-beda tergantung pada bagian gambar yang Anda klik.<br>
+            Untuk membuat peta gambar, Anda memerlukan gambar, dan beberapa kode HTML yang menjelaskan area yang dapat diklik.
+        </p>
+        
+        <h2>The Image</h2>
+        <p>Gambar disisipkan menggunakan tag 'img'. Satu-satunya perbedaan dari gambar lain adalah Anda harus menambahkan atribut usemap:</p>
+        <!--contoh-->
+        <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+        <p>Nilai usemap dimulai dengan tag hash # diikuti dengan nama peta gambar, dan digunakan untuk membuat hubungan antara gambar dan peta gambar.<br>
+            <strong>Tip:</strong> Anda dapat menggunakan gambar apa pun sebagai peta gambar!
+        </p>
+
+        <h2>Create Image Map</h2>
+        <p>Kemudian, tambahkan elemen 'map'.<br>
+            Elemen 'map' digunakan untuk membuat peta gambar, dan ditautkan ke gambar dengan menggunakan atribut nama yang diperlukan:
+        </p>
+        <!--contoh-->
+        <map name="workmap"></map>
+        <p>Atribut name harus memiliki nilai yang sama dengan atribut usemap 'img'.</p>
+
+        <h2>The Areas</h2>
+        <p>Kemudian, tambahkan area yang dapat diklik.<br>
+            Area yang dapat diklik ditentukan menggunakan elemen 'area'.
+        </p>
+
+        <h3>Membentuk</h3>
+        <p>Anda harus menentukan bentuk area yang dapat diklik, dan Anda dapat memilih salah satu dari nilai berikut:</p>-
+        <li>rect - mendefinisikan wilayah persegi panjang</li>
+        <li>lingkaran - mendefinisikan wilayah melingkar</li>
+        <li>poli - mendefinisikan wilayah poligonal</li>
+        <li>default - mendefinisikan seluruh wilayah</li>
+        <p>Anda juga harus menentukan beberapa koordinat untuk dapat menempatkan area yang dapat diklik pada gambar.</p>
+
+        <h3>Bentuk = "rect"</h3>
+        <!--contoh-->
+        <area shape="rect" coords="34, 44, 270, 350" href="computer.htm">
+
+        <h3>Bentuk = "circle"</h3>
+        <p>Untuk menambah luas lingkaran, cari dulu koordinat pusat lingkarannya:</p>
+        <!--contoh-->
+        <area shape="circle" coords="337, 300, 44" href="coffee.htm">
+
+        <h3>membuat="poly"</h3>
+        <p>beberapa titik koordinat, yang menghasilkan bentuk yang dibentuk dengan garis lurus (poligon).<br>
+            Ini dapat digunakan untuk membuat bentuk apa pun.
+        </p>
+        <!--contoh-->
+        <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="croissant.htm">
+
+        <h2>Image Map and JavaScript</h2>
+        <p>Area yang dapat diklik juga dapat memicu fungsi JavaScript.<br>
+            Tambahkan event click ke elemen 'area' untuk menjalankan fungsi JavaScript:
+        </p>
+        <!--contoh-->
+        <map name="workmap">
+            <area shape="circle" coords="337,300,44" href="coffee.htm" onclick="myFunction()">
+        </map>         
+        <script>
+          function myFunction() {
+            alert("You clicked the coffee cup!");
+          }
+        </script>
+
+        <h4>Ringkasan Bab</h4>
+        <li>Gunakan elemen HTML 'map' untuk mendefinisikan peta gambar</li>
+        <li>Gunakan elemen HTML 'area' untuk menentukan area yang dapat diklik di peta gambar</li>
+        <li>Gunakan atribut usemap HTML dari elemen 'img' untuk menunjuk ke peta gambar</li>
+
+
+        <h1>HTML Background Images</h1>
+        <p>Gambar latar belakang dapat ditentukan untuk hampir semua elemen HTML.</p>
+
+        <h2>Gambar Latar Belakang pada elemen HTML</h2>
+        <p>Untuk menambahkan gambar latar belakang pada elemen HTML, gunakan atribut style HTML dan properti CSS background-image :</p>
+        <!--contoh-->
+        <p style="background-image: url('img_girl.jpg');">
+        
+        <p>Anda juga dapat menentukan gambar latar belakang di elemen 'style', di bagian 'head':</p>
+        <!--contoh-->
+        <style>
+            p {
+              background-image: url('img_girl.jpg');
+            }
+        </style>
+
+        <h2>Gambar Latar Belakang pada Halaman</h2>
+        <p>Jika Anda ingin seluruh halaman memiliki gambar latar belakang, Anda harus menentukan gambar latar belakang pada elemen 'body':</p>
+        <!--contoh-->
+        <style>
+            body {
+              background-image: url('img_girl.jpg');
+            }
+        </style>
+
+        <h2>Background Repeat</h2>
+        <p>Jika gambar latar belakang lebih kecil dari elemennya, gambar tersebut akan berulang secara horizontal dan vertikal hingga mencapai akhir elemen:</p>
+        <!--contoh-->
+        <style>
+            body {
+              background-image: url('example_img_girl.jpg');
+            }
+        </style>
+
+        <p>Untuk menghindari gambar latar belakang terulang, atur properti background-repeat menjadi no-repeat.</p>
+        <!--contoh-->
+        <style>
+            body {
+              background-image: url('example_img_girl.jpg');
+              background-repeat: no-repeat;
+            }
+        </style>
+
+        <h2>Background Cover</h2>
+        <p>Jika Anda ingin gambar latar belakang menutupi seluruh elemen, Anda dapat mengatur properti background-size menjadi cover.<br>
+            Selain itu, untuk memastikan seluruh elemen selalu tertutup, atur properti background-attachment menjadi fixed:<br>
+            Dengan cara ini, gambar latar belakang akan menutupi seluruh elemen, tanpa peregangan (gambar akan mempertahankan proporsi aslinya):
+        </p>
+        <!--contoh-->
+        <style>
+            body {
+              background-image: url('img_girl.jpg');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+            }
+        </style>
+
+        <h2>Peregangan Latar Belakang</h2>
+        <!--contoh-->
+        <style>
+            body {
+              background-image: url('img_girl.jpg');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: 100% 100%;
+            }
+        </style>
+
+
+       <h1>HTML 'picture' Element</h1>
+       <p>Elemen HTML 'picture' memungkinkan Anda menampilkan gambar berbeda untuk perangkat atau ukuran layar berbeda.</p>
+
+       <h2>The HTML 'picture' Element</h2>
+       <p>Elemen HTML 'picture' memberi pengembang web lebih banyak fleksibilitas dalam menentukan sumber daya gambar.<br>
+        Elemen 'picture' berisi satu atau lebih elemen 'source', masing-masing merujuk ke gambar berbeda melalui atribut srcset. Dengan cara ini browser dapat memilih gambar yang paling sesuai dengan tampilan dan/atau perangkat saat ini.<br>
+        Setiap elemen 'source' memiliki atribut media yang menentukan kapan gambar paling cocok.</p>
+        <!--contoh-->
+        <picture>
+            <source media="(min-width: 650px)" srcset="img_food.jpg">
+            <source media="(min-width: 465px)" srcset="img_car.jpg">
+            <img src="img_girl.jpg">
+        </picture>
+        <p><strong>Note:</strong> Selalu tentukan elemen 'img' sebagai elemen turunan terakhir dari elemen 'gambar'. Elemen 'img' digunakan oleh browser yang tidak mendukung elemen 'gambar', atau jika tidak ada tag 'sumber' yang cocok</p>
+
+        <h3>Kapan menggunakan Elemen Gambar</h3>
+        <p>Ada dua tujuan utama elemen 'picture':</p>
+        <ol>
+            <li>Bandwidth<br>Jika Anda memiliki layar atau perangkat kecil, tidak perlu memuat file gambar berukuran besar. Browser akan menggunakan elemen 'source' pertama dengan nilai atribut yang cocok, dan mengabaikan elemen berikut.</li>
+            <li> Format Support<br>Beberapa browser atau perangkat mungkin tidak mendukung semua format gambar. Dengan menggunakan elemen <picture>, Anda dapat menambahkan gambar dalam semua format, dan browser akan menggunakan format pertama yang dikenalinya, dan mengabaikan salah satu elemen berikut.</li>
+        </ol>
+        <!--contoh--> 
+        <picture>
+            <source srcset="img_avatar.png">
+            <source srcset="img_girl.jpg">
+            <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+        </picture>
+
+        <p><strong>Catatan:</strong> Browser akan menggunakan elemen 'source' pertama dengan nilai atribut yang cocok, dan mengabaikan elemen 'source' berikutnya.</p> 
+    </body>
+</html>
