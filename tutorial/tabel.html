@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Tabel Html Nissa</title></head>
+    <header><h1>Tabel HTML</h1>
+        <p>Tabel HTML memungkinkan pengembang web untuk mengatur data ke dalam baris dan kolom.</p>
+    </header>
+    <body>
+        <h2>Tentukan Tabel HTML</h2>
+        <p>Tabel dalam HTML terdiri dari sel-sel tabel di dalam baris dan kolom.</p>
+        <!--contoh-->
+        <tabel>
+            <tr>
+              <th>Perusahaan</th>
+              <th>Kontak</th>
+              <th>Negara</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Jerman</td>
+            </tr>
+            <tr>
+              <td>Pusat komersial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td>Meksiko</td>
+            </tr>
+        </tabel>
+
+
+        <h2>Table Cells</h2>
+        <p>Setiap sel tabel ditentukan oleh tag 'td' dan '/td'.<br>
+            td adalah singkatan dari data tabel.
+        </p>
+        <!--contoh-->
+        <table>
+            <tr>
+              <td>Emil</td>
+              <td>Tobias</td>
+              <td>Linus</td>
+            </tr>
+        </table>
+        <p><strong>Catatan:</strong> Sel tabel dapat berisi semua jenis elemen HTML: teks, gambar, daftar, tautan, tabel lain, dll.</p>
+        
+        
+        <h2>Baris Tabel</h2>
+        <p>Setiap baris tabel dimulai dengan tag 'tr' dan diakhiri dengan tag '/tr'.<br>
+            tr singkatan dari baris tabel.
+        </p>
+
+        <!--contoh-->
+        <table>
+            <tr>
+              <td>Emil</td>
+              <td>Tobias</td>
+              <td>Linus</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>14</td>
+              <td>10</td>
+            </tr>
+        </table>
+
+        <p>Anda dapat memiliki baris sebanyak yang Anda suka dalam sebuah tabel; pastikan saja jumlah sel di setiap baris sama.<br>
+        <strong>catatan:</strong> Ada kalanya sebuah baris dapat memiliki sel lebih sedikit atau lebih banyak dibandingkan baris lainnya. Anda akan mempelajarinya di bab selanjutnya.
+        </p> 
+
+
+        <h2>Header Tabel</h2>
+        <p>terkadang Anda ingin sel Anda menjadi sel header tabel. Dalam kasus tersebut gunakan tag 'th' alih-alih tag 'td':<br>
+            th singkatan dari header tabel.
+        </p>
+        <!--contoh-->
+        <table>
+            <tr>
+              <th>Person 1</th>
+              <th>Person 2</th>
+              <th>Person 3</th>
+            </tr>
+            <tr>
+              <td>Emil</td>
+              <td>Tobias</td>
+              <td>Linus</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>14</td>
+              <td>10</td>
+            </tr>
+        </table>
+
+
+
+
+
+
+        <h1>Table Borders</h1>
+        <p>Tabel HTML dapat memiliki batas gaya dan bentuk yang berbeda.</p>
+
+        <h2>Cara Menambahkan Perbatasan</h2>
+        <p>Untuk menambahkan border, gunakan properti border CSS pada elemen tabel, th, dan td:</p>
+        <!--contoh-->
+        table, th, td {
+          border: 1px solid black;
+        }
+
+        <h2>Collapsed Table Borders</h2>
+        <p>Untuk menghindari batas ganda seperti pada contoh di atas, setel properti CSS border-collapse menjadi ciutkan.</br>
+          Hal ini akan membuat perbatasan tersebut runtuh menjadi satu perbatasan:
+        </p>
+        <!--contoh-->
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+
+        <h2>Style Table Borders</h2>
+        <p>Jika Anda mengatur warna latar belakang setiap sel, dan memberi warna putih pada tepinya (sama dengan latar belakang dokumen), Anda mendapatkan kesan tepi yang tidak terlihat:</p>
+        table, th, td {
+          border: 1px solid white;
+          border-collapse: collapse;
+        }
+        th, td {
+          background-color: #96D4D4;
+        }
+
+        <h2>Perbatasan Meja Bundar</h2>
+        <p>Dengan properti border-radius, batasnya berbentuk sudut membulat:</p>
+        <!--contoh-->
+        table, th, td {
+          border: 1px solid black;
+          border-radius: 10px;
+        }
+
+        <p>Lewati batas di sekitar tabel dengan meninggalkan tabel dari pemilih css:</p>
+        <!--contoh-->
+        th, td {
+          border: 1px solid black;
+          border-radius: 10px;
+        }
+         
+        <h2>Batas Tabel Bertitik</h2> 
+        <p>Dengan properti border-style, Anda dapat mengatur tampilan perbatasan.</p>
+        <!--contoh-->
+        th, td {
+          border-style: dotted;
+        }
+
+        <h2>Border Color</h2>
+        <p>Dengan properti border-color, Anda dapat mengatur warna border.</p>
+        <!--contoh-->
+        th, td {
+          border-color: #96D4D4;
+        }
+
+
+
+
+
+      
+      <h1>HTML Table Sizes</h1>
+      <h2>HTML Table Width</h2>  
+      <!-- contoh -->
+      <table style="width:100%">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+      </table>
+      
+      <h2>Table Column Width</h2>
+      <!-- contoh -->
+      <table style="width:100%">
+        <tr>
+          <th style="width:70%">Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+      </table>
+
+      <h2>Table Row Height</h2>
+      <!-- contoh -->
+      <table style="width:100%">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr style="height:200px">
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+      </table>
+
+
+
+
+
+
+      <h1>Table Header</h1>
+      <p>Tabel HTML dapat memiliki header untuk setiap kolom atau baris, atau untuk banyak kolom/baris.</p>
+
+      <h2>Table Headers</h2>
+      <!-- contoh -->
+      <table>
+        <tr>
+          <th>Nama Depan</th>
+          <th>Nama BElakang</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Nissa</td>
+          <td>Ika</td>
+          <td>17</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+      </table>
+      
+      <h2>Vertical Table Headers</h2>
+      <!-- contoh -->
+      <table>
+        <tr>
+          <th>Nama Depan</th>
+          <td>Nissa</td>
+          <td>Eve</td>
+        </tr>
+        <tr>
+          <th>Nama BElakang</th>
+          <td>ika</td>
+          <td>Jackson</td>
+        </tr>
+        <tr>
+          <th>Age</th>
+          <td>94</td>
+          <td>50</td>
+        </tr>
+      </table>
+
+      <p>CSS text-align property</p>
+      <!-- th { text-align: left; } -->
+
+      <h2>Multiple Columns</h2>
+      <p>Anda dapat memiliki header yang mencakup dua kolom atau lebih.</p>
+      <!-- contoh -->
+      <table>
+        <tr>
+          <th colspan="2">Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+      </table>
+
+      <h2>Table Caption</h2>
+      <!-- contoh -->
+      <table style="width:100%">
+        <caption>Tabel NIssa</caption>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>January</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td>$50</td>
+        </tr>
+      </table>
+
+
+
+
+
+    
+      <h1>Table Padding & Spacing</h1>
+      <p>tabel dapat menyesuaikan padding di dalam sel, dan juga ruang antar sel</p>
+      
+      <h2>Table - Cell Padding</h2>
+      <p>Cell padding adalah jarak antara tepi sel dan isi sel.</br>
+        Secara default padding diatur ke 0.
+      </p>
+      <!-- contoh -->
+      th, td { padding: 15px; }
+      <!-- contoh style -->
+      th, td {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 40px;
+      }
+
+      <h2>Table - Cell Spacing</h2>
+      <!-- contoh -->
+      table {
+        border-spacing: 30px;
+      }
+
+
+
+
+
+
+      <h1>Table Colspan & Rowspan</h1>
+      <p>tabel dapat memiliki sel yang mencakup beberapa baris dan/atau kolom.</p>
+
+      <h2>Table - Colspan</h2>
+      <!-- contoh -->
+      <table>
+        <tr>
+          <th colspan="2">Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>43</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>57</td>
+        </tr>
+      </table>
+      
+      <h2>Table - Rowspan</h2>
+      <!-- contoh -->
+      <table>
+        <tr>
+          <th>Name</th>
+          <td>Jill</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Phone</th>
+          <td>555-1234</td>
+        </tr>
+        <tr>
+          <td>555-8745</td>
+      </tr>
+      </table>
+
+
+
+
+      <h1>Table Styling</h1>
+
+      <h2>Table - Zebra Stripes</h2>
+      P>Untuk membuat garis zebra vertikal, beri gaya pada setiap kolom lainnya, bukan setiap baris lainnya.</P>
+      <!-- contoh -->
+      td:nth-child(even), th:nth-child(even) {
+        background-color: #D6EEEE;
+      }
+      <p><strong>Catatan:</strong> Letakkan pemilih :nth-child() pada elemen th dan td jika Anda ingin menata gaya pada header dan sel tabel biasa.</p>
+
+      <h2>Gabungkan Garis Zebra Vertikal dan Horisontal</h2>
+      <p>Anda dapat menggabungkan gaya dari dua contoh di atas dan Anda akan memiliki garis-garis di setiap baris dan kolom lainnya.<br>
+        Jika Anda menggunakan warna transparan, Anda akan mendapatkan efek yang tumpang tindih.
+      </p>
+      <!-- contoh -->
+      tr:nth-child(even) {
+        background-color: rgba(150, 212, 212, 0.4);
+      }
+      
+      th:nth-child(even),td:nth-child(even) {
+        background-color: rgba(150, 212, 212, 0.4);
+      }
+
+      <h2>Horizontal Dividers</h2>
+      <p>Jika Anda menentukan batas hanya di bagian bawah setiap baris tabel, Anda akan memiliki tabel dengan pembagi horizontal.</p>
+      <!-- contoh -->
+      tr {
+        border-bottom: 1px solid #ddd;
+      }
+
+      <h2>Tabel Melayang</h2>
+      <!-- contoh -->
+      tr:hover {background-color: #D6EEEE;}
+
+
+
+
+      <h1>Table Colgroup</h1>
+      <p>Jika Anda ingin memberi gaya pada dua kolom pertama tabel, gunakan elemen 'colgroup' dan 'ol'.</p>
+      <p>elemen 'colgroup' harus digunakan sebagai wadah untuk spesifikasi kolom.<br>
+        Setiap grup ditentukan dengan elemen 'col'.<br>
+        Atribut span menentukan berapa banyak kolom yang mendapatkan gaya.<br>
+        Atribut style menentukan gaya yang akan diberikan pada kolom.
+      </p>
+      <!-- contoh -->
+      <!-- <table>
+        <colgroup>
+          <col span="2" style="background-color: #D6EEEE">
+        </colgroup>
+        <tr>
+          <th>MON</th>
+          <th>TUE</th>
+          <th>WED</th>
+          <th>THU</th> -->
+
+      <h2>Multiple Col Elements</h2>
+      <p>Jika Anda ingin menata lebih banyak kolom dengan gaya berbeda, gunakan lebih banyak elemen 'col' di dalam 'colgroup':</p>
+      <!-- contoh -->
+      <!-- <table>
+        <colgroup>
+          <col span="2" style="background-color: #D6EEEE">
+          <col span="3" style="background-color: pink">
+        </colgroup>
+        <tr>
+          <th>MON</th>
+          <th>TUE</th>
+          <th>WED</th>
+          <th>THU</th>  -->
+      
+          <h2>Empty Colgroups</h2>
+          <!-- contoh -->
+          <!-- <table>
+            <colgroup>
+              <col span="3">
+              <col span="2" style="background-color: pink">
+            </colgroup>
+            <tr>
+              <th>MON</th>
+              <th>TUE</th>
+              <th>WED</th>
+              <th>THU</th> -->
+
+              <h2>Hide Columns</h2>
+              <!-- contoh -->
+              <!-- <table>
+                <colgroup>
+                  <col span="2">
+                  <col span="3" style="visibility: collapse">
+                </colgroup>
+                <tr>
+                  <th>MON</th>
+                  <th>TUE</th>
+                  <th>WED</th>
+                  <th>THU</th> -->
+    </body>
+    <footer> &copy; Nissa Ika Rachmawati </footer>
+</html>
