@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahasa-Pemograman-Javascript-html-Nissa</title>
+</head>
+<body>
+    <h1>Bahasa pemrograman HTML dan JavaScript</h1>
+    <p>JavaScript membuat halaman HTML lebih dinamis dan interaktif.</p>
+
+    <h2>Tag HTML script</h2>
+    <p>Elemen tersebut script berisi pernyataan skrip, atau menunjuk ke berkas skrip eksternal melalui srcatribut.
+        Untuk memilih elemen HTML, JavaScript paling sering menggunakan document.getElementById()metode berikut.
+    </p>
+    <!-- contoh -->
+    <script>
+        document.getElementById("demo").innerHTML = "Nissa Menggunakkan Javascript!";
+    </script>
+
+    <h2>Sedikit Rasa JavaScript</h2>
+    <!-- contoh JavaScript dapat mengubah konten: -->
+    document.getElementById("demo").innerHTML = "Hello JavaScript!"; 
+    
+    <!-- contoh JavaScript dapat mengubah gaya: -->
+    document.getElementById("demo").style.fontSize = "25px";
+    document.getElementById("demo").style.color = "red";
+    document.getElementById("demo").style.backgroundColor = "yellow"; 
+         
+    <!-- Contoh JavaScript dapat mengubah atribut: -->
+    document.getElementById("image").src = "picture.gif";
+    
+    <h2>Tag HTML noscript</h2>
+    <p>Tag HTML <noscript>mendefinisikan konten alternatif yang akan ditampilkan kepada pengguna yang telah menonaktifkan skrip di browser mereka atau memiliki browser yang tidak mendukung skrip:</p>
+    <!-- contoh -->
+    <script>
+        document.getElementById("demo").innerHTML = "Nissa Menggunakkan nonscript!";
+    </script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript> 
+</body>
+</html>
