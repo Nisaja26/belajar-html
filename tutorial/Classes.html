@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classes-html-nissa</title>
+</head>
+<body>
+    <h1>HTML class Attribute</h1>
+    <!-- contoh -->
+    <style>
+        .city {
+          background-color: tomato;
+          color: white;
+          border: 2px solid black;
+          margin: 20px;
+          padding: 20px;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div class="city">
+          <h2>London</h2>
+          <p>London is the capital of England.</p>
+        </div>
+        
+        <div class="city">
+          <h2>Paris</h2>
+          <p>Paris is the capital of France.</p>
+        </div>
+        
+        <div class="city">
+          <h2>Tokyo</h2>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+        
+        <!-- contoh -->
+        <style>
+            .note {
+              font-size: 120%;
+              color: red;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h1>My <span class="note">Important</span> Heading</h1>
+            <p>This is some <span class="note">important</span> text.</p>
+            
+        <h2>Sintaksis Untuk Kelas</h2>    
+        <!-- contoh -->
+        <style>
+            .city {
+              background-color: tomato;
+              color: white;
+              padding: 10px;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h2 class="city">London</h2>
+            <p>London is the capital of England.</p>
+            
+            <h2 class="city">Paris</h2>
+            <p>Paris is the capital of France.</p>
+            
+            <h2 class="city">Tokyo</h2>
+            <p>Tokyo is the capital of Japan.</p>
+
+        <h2>Beberapa Kelas</h2> 
+        <!-- contoh -->
+        <h2 class="city main">London</h2>
+        <h2 class="city">Paris</h2>
+        <h2 class="city">Tokyo</h2>
+
+        <h2>Elemen yang Berbeda Dapat Berbagi Kelas yang Sama</h2>
+        <!-- contoh -->
+        <h2 class="city">Paris</h2>
+        <p class="city">Paris is the capital of France</p>
+
+        <h2>Penggunaan Atribut Class di JavaScript</h2>
+        <!-- contoh -->
+        <script>
+            function myFunction() {
+              var x = document.getElementsByClassName("city");
+              for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+            }
+            </script> 
+
+        <h3>Ringkasan Bab</h3> 
+        <li>Atribut HTML classmenentukan satu atau lebih nama kelas untuk suatu elemen</li>
+        <li>Kelas digunakan oleh CSS dan JavaScript untuk memilih dan mengakses elemen tertentu</li>
+        <li>Atribut ini classdapat digunakan pada elemen HTML apa pun</li>  
+        <li>Nama kelas peka huruf besar/kecil</li> 
+        <li>Elemen HTML yang berbeda dapat menunjuk ke nama kelas yang sama</li>
+        <li>JavaScript dapat mengakses elemen dengan nama kelas tertentu dengan getElementsByClassName() metode</li>
+</body>
+</html>
