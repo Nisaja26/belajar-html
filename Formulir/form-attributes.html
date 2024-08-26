@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-attributes-html-nissa</title>
+</head>
+<body>
+   <h1>Atribut Formulir HTML</h1>
+   <p>Bab ini menguraikan berbagai atribut untuk <form>elemen HTML.</p>
+
+    <h2>atributes action</h2>
+    <p>Atribut actionmendefinisikan tindakan yang akan dilakukan saat formulir dikirimkan.</p>
+    <!-- Contoh Saat mengirim, kirim data formulir ke "action_page.php": -->
+    <form action="/action_page.php">
+        <label for="fname">Nama Depan:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Nama Belakang:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form> 
+
+    <h2>Atribut Target</h2>
+    <!-- Contoh Di sini, hasil yang dikirimkan akan terbuka di tab browser baru: -->
+    <form action="/action_page.php" target="_blank"></form> 
+
+    <h2>Atribut Metode</h2>
+    <p>Atribut tersebut methodmenentukan metode HTTP yang akan digunakan saat mengirimkan data formulir.</p>
+    <!-- Contoh Contoh ini menggunakan metode GET saat mengirimkan data formulir: -->
+    <form action="/action_page.php" method="get"></form>
+    
+    <!-- Contoh Contoh ini menggunakan metode POST saat mengirimkan data formulir: -->
+    <form action="/action_page.php" method="post"></form>
+
+    <h2>Atribut Pelengkapan Otomatis</h2>
+    <!-- Contoh Formulir dengan pelengkapan otomatis pada: -->
+    <form action="/action_page.php" autocomplete="on"></form> 
+
+    <h2>Atribut Novalidate</h2>
+    <!-- Contoh Formulir dengan atribut novalidate: -->
+    <form action="/action_page.php" novalidate></form> 
+</body>
+</html>
