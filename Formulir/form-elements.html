@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-elements-html-nissa</title>
+</head>
+<body>
+    <h1>HTML Form Elements</h1>
+    <p>Bab ini menguraikan semua elemen formulir HTML yang berbeda.</p>
+
+    <h2>Elemen HTML <form></h2>
+    <p>Elemen HTML <form>dapat berisi satu atau lebih elemen formulir berikut:</p>
+    <!--  <input>
+         <label>
+         <select>
+         <textarea>
+         <button>
+         <fieldset>
+         <legend>
+         <datalist>
+         <output>
+         <option>
+         <optgroup> -->
+
+    <h2>Elemen input</h2>  
+    <p>Salah satu elemen bentuk yang paling banyak digunakan adalah input elemen.</p>      
+    <!-- contoh -->
+    <label for="fname">Nama depan:</label>
+    <input type="text" id="fname" name="fname"> 
+
+    <h2>Elemen label</h2>
+    <p>Atribut fortag label harus sama dengan idatribut elemen input untuk mengikatnya bersama.</p>
+
+    <h2>Elemen select</h2> 
+    <p>Elemen ini select mendefinisikan daftar drop-down:</p>
+    <!-- contoh -->
+    <label for="cars">teman:</label>
+    <select id="cars" name="cars">
+      <option value="volvo">Nissa</option>
+      <option value="saab">Tiara</option>
+      <option value="fiat">maysya</option>
+      <option value="audi">Nabila</option>
+    </select>  
+
+    <p>Untuk menentukan opsi yang telah dipilih sebelumnya, tambahkan selected atribut ke opsi tersebut:</p>
+    <!-- contoh -->
+    <option value="Nissa" selected>Nissa</option>   
+
+    <h2>Nilai yang Terlihat:</h2>
+    <!-- contoh Gunakan size atribut -->
+    <label for="cars">teman:</label>
+    <select id="cars" name="cars" size="3">
+      <option value="volvo">Nabila</option>
+      <option value="saab">maysya</option>
+      <option value="fiat">Nissa</option>
+      <option value="audi">Tiara</option>
+    </select>
+
+    <h2>Izinkan Beberapa Pilihan:</h2>
+    <!-- contoh -->
+    <label for="cars">teman:</label>
+    <select id="cars" name="cars" size="4" multiple>
+      <option value="volvo">Nissa</option>
+      <option value="saab">Nabila</option>
+      <option value="fiat">maysya</option>
+      <option value="audi">Tiara</option>
+    </select>
+ 
+    <h2>Elemen textarea</h2>
+    <p>Elemen ini textarea mendefinisikan bidang input multi-baris (area teks):</p>
+    <!-- contoh -->
+        <textarea name="message" rows="10" cols="30">
+            Nissa menyukai kucing karena lucu.
+        </textarea>
+
+        <textarea name="message" style="width:200px; height:600px;">
+            Nissa suka warna ungu.
+        </textarea>
+        
+    <h2>Elemen button</h2>
+    <p>Elemen ini button mendefinisikan tombol yang dapat diklik:</p>
+    <!-- contoh -->
+    <button type="button" onclick="alert('Hello World!')">Klik di sini!</button>  
+
+    <h2>Elemen fieldset dan legend</h2>
+    <p>Elemen legend mendefinisikan judul untuk fieldset elemen tersebut.</p>
+    <!-- contoh -->
+    <form action="/action_page.php">
+        <fieldset>
+          <legend>Personalia:</legend>
+          <label for="fname">nama depan:</label><br>
+          <input type="text" id="fname" name="fname" value="Nissa"><br>
+          <label for="lname">nama belakang:</label><br>
+          <input type="text" id="lname" name="lname" value="Ika"><br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+        
+    <h2>Elemen datalist</h2>
+    <p>Atribut listelemen <input>harus mengacu pada idatribut elemen <datalist>.</p>
+        <!-- contoh -->
+        <form action="/action_page.php">
+            <input list="browsers">
+            <datalist id="browsers">
+              <option value="Edge">
+              <option value="Firefox">
+              <option value="Chrome">
+              <option value="Opera">
+              <option value="Safari">
+            </datalist>
+        </form>   
+        
+    <h2>Elemen output</h2>    
+    <!-- contoh -->
+    <form action="/action_page.php"
+    oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+    <input type="range"  id="a" name="a" value="50">
+    100 +
+    <input type="number" id="b" name="b" value="50">
+    =
+    <output name="x" for="a b"></output>
+    <br><br>
+    <input type="submit">
+  </form>
+</body>
+</html>
